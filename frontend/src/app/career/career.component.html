@@ -1,0 +1,45 @@
+<div>
+  <img src="https://images.unsplash.com/photo-1587582423116-ec07293f0395?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" width="100%" height="500px">
+  <div style="background-color: aqua; width: 100%; height: 30px;">
+
+  </div>
+</div>
+<div class="text-center" id="p">
+  <h3>Work With Us</h3>
+  <p>We place a high value on internal growth and employee learning and development. <br> Each employee begins their journey with us with above-industry standard training, and is encouraged to grow their horizons with support <br>  from company infrastructure and leadership.</p>
+
+</div>
+
+
+
+<div class=" container box">
+  <div>
+  <!-- user-form.component.html -->
+  <form action="/api/users" method="post" (ngSubmit)="onSubmit()" enctype="multipart/form-data">
+
+      <label for="firstName">First Name *</label><br>
+      <input type="text" id="firstName" name="firstName" [(ngModel)]="user.firstName" required> <br><br>
+  
+      <label for="email">Email *</label><br>
+      <input type="text" id="email" name="email" [(ngModel)]="user.email" required><br><br>
+  
+      <label for="mobile">Mobile *</label> <br>
+      <input type="text" id="text" name="text" maxlength="10" [(ngModel)]="user.mobile" required> <br><br>
+      <label for="experience">Year of experience *</label> <br>
+      <input type="number" id="number" name="number"  [(ngModel)]="user.experience" required> <br><br>
+      <label for="Department">Department *</label> <br>
+      <input type="text" id="text" name="text"  [(ngModel)]="user.department" required> <br><br>
+      <label for="Location">Location *</label> <br>
+      <input type="text" id="text" name="text"  [(ngModel)]="user.location" required> <br><br>
+      <label for="file">Upload Resume *</label><br>
+      <input type="file" id="file" name="resume" accept=".pdf, .doc, .docx"   [(ngModel)]="user.file" required>
+      <br><br>
+      <!-- Add other fields as needed -->
+  
+      <button type="submit">Submit</button>
+     
+  </form>
+  <form action="/api/users" method="get" (ngSubmit)="onMySubmit()" > <button type="submit">Submit</button></form>
+  
+  
+</div>

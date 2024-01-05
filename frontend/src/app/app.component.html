@@ -1,0 +1,127 @@
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="/assets/image/Capture.PNG" alt="" width="130" height="54">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarScroll">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <div class="dropdown">
+          <a class="nav-link dropbtn" [routerLink]="'/home'" (click)="scrollToTop()">HOME</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <div class="dropdown">
+          <a class="nav-link dropbtn" [routerLink]="'/design'" (click)="scrollToTop()">DESIGN</a>
+          <div class="dropdown-content">
+            <a [routerLink]="'/ceiling'" (click)="scrollToTop()">CEILING</a>
+            <a [routerLink]="'/kitchen'" (click)="scrollToTop()">KITCHEN</a>
+            <a [routerLink]="'/bedroom'" (click)="scrollToTop()">BEDROOM</a>
+            <a [routerLink]="'/wall'" (click)="scrollToTop()">WALLDESIGN</a>
+          </div>
+        </div> 
+      </li>
+
+      <li class="nav-item">
+        <div class="dropdown" id="main-content">
+        <a class="nav-link dropbtn" [routerLink]="'/more'" (click)="scrollToTop()">MORE</a>
+        <div class="dropdown-content"id="main-content">
+          <a [routerLink]="'/material'" (click)="scrollToTop()">MATERIAL CONTRACTOR </a>
+          <a [routerLink]="'/vastu'" (click)="scrollToTop()">VASTU PLANNING</a>
+          <a [routerLink]="'/electric'" (click)="scrollToTop()">ELECTRICAL WORKS</a>
+          <a [routerLink]="'/build'" (click)="scrollToTop()">DESIGN OF BUILDINGS</a>
+        </div>
+      </div>
+    </li>
+       <li class="nav-item">
+        <div class="dropdown" id="main-content">
+          <a class="nav-link dropbtn" [routerLink]="'/career'" (click)="scrollToTop()">CAREER</a>
+        </div>
+        </li>
+        <li class="nav-item">
+          <div class="dropdown" id="main-content">
+          <a class="nav-link dropbtn" [routerLink]="'/contact'" (click)="scrollToTop()">CONTACT</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- <img src="/src/assets/image/Capture.PNG" alt=""> -->
+
+
+
+
+
+
+
+
+<router-outlet></router-outlet>
+
+<div class="container" id="footer">
+<div class="row row-cols-1 row-cols-md-4 g-4">
+ 
+  <div class="col">
+   <img src=" /assets/image/Capture.PNG" class="card-img-top" alt="..." width="20px" height="20px">
+      <div class="card-body">
+        <h5 class="card-title">FOLLOW US ON </h5>
+          <a href="#" class="card-link"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" class="card-link"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="card-link"><i class="fa-brands fa-twitter"></i></a>
+    </div>
+  </div>
+  <div class="col">
+   
+      <div class="card-body">
+        <h5 class="card-title">Link</h5>
+        <ul class="list-group list-group-flush" id="main-content">
+          <li class="list-group"><a  [routerLink]="'/contact'" (click)="scrollToTop()">Contact us</a></li>
+          <li class="list-group"><a [routerLink]="'/career'" (click)="scrollToTop()">Careers</a></li>
+          <li class="list-group"><a [routerLink]="'/privacy'" (click)="scrollToTop()">Privacy policy</a></li>
+          <li class="list-group"><a [routerLink]="'/cookies'" (click)="scrollToTop()">Cookies policies</a></li>
+          <li class="list-group"><a [routerLink]="'/tearms'" (click)="scrollToTop()">Tearms & conditions</a></li>
+        </ul>
+    </div>
+  </div>
+  <div class="col">
+      <div class="card-body">
+        <h5 class="card-title">Banglore</h5>
+        <ul class="list-group list-group-flush">
+          <li class="list-group">LOREAM Construction (P) Ltd</li>
+          <li class="list-group"> No.000, 0st Cross, 7th Main</li>
+          <li class="list-group">xxx 2nd Stage, xxx Nagar</li>
+          <li class="list-group">Bengaluru - 560 008</li>
+          <li class="list-group">Karnataka,India</li>
+          <li class="list-group" id="list">For business queries</li>
+          <li class="list-group"> Mobile: +91 00000 40001</li>
+          <li class="list-group">Tel: +91 00 00000023 / 00</li>
+          <li class="list-group"> E: loream@.co.in</li>
+        </ul>
+    </div>
+  </div>
+  <div class="col">
+      <div class="card-body">
+        <h5 class="card-title">Chennai</h5>
+        <ul class="list-group list-group-flush">
+          <li class="list-group">LOREAM Construction (P) Ltd</li>
+          <li class="list-group"> xxxx yyyy, 2nd Floor</li>
+          <li class="list-group">xxx 2nd Stage, xxx Nagar</li>
+          <li class="list-group">Chennai - 600017</li>
+          <li class="list-group">Tamilnadu, India</li>
+          <li class="list-group" id="list">For business queries</li>
+          <li class="list-group"> Mobile: +91 00000 40001</li>
+          <li class="list-group">Tel: +91 00 00000023 / 00</li>
+          <li class="list-group"> E: loream@.co.in</li>
+        </ul>
+    </div>
+  </div>
+</div>
+</div>
+
+<div>
+  <p class="text-center" style="margin-top: 100px;">Copyright © 2023 LOREAM Pvt Ltd | All Rights Reserved | Designed by Nextion</p>
+</div>

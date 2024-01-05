@@ -1,0 +1,22 @@
+#footer{
+    margin-top: 50px;
+  }
+ 
+.card-title {
+  margin-bottom: 20px;
+  color: var(--bs-card-title-color);
+}
+#list{
+  margin-top: 30px;
+}
+.list-group a{
+  text-decoration: none;
+}
+.card-link i{
+  margin-right: 20px;
+}
+#foot{
+    margin-top: 100px;
+    background-color: rgb(135, 134, 132);
+}
+
